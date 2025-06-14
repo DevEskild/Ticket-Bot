@@ -29,7 +29,7 @@ module.exports = {
     }
 
     const channel = interaction.channel;
-    const ticketMatch = channel.name.match(/ticket-(?:.+-)?(\d+)$/);
+    const ticketMatch = channel.name.match(/sak-(?:.+-)?(\d+)$/);
     if (!ticketMatch) {
       return interaction.reply({
         content: "❌ Denne kommandoen må brukes i en sakskanal.",
